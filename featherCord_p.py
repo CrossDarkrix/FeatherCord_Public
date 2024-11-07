@@ -204,16 +204,17 @@ async def on_ready():
     await Bot.change_presence(activity=discord.Game('BOTは正常に稼働しました！(ver.0.0.1)'))
 
 
+app = Flask('')
 class httpServer(object):
     def __init__(self):
-        self.app = Flask('')
+        pass
 
-    @self.app.route('/')
+    @app.route('/')
     def home(self):
         return "I'm alive"
 
     def start_server(self):
-        self.app.run(host='0.0.0.0', port=50111)
+        app.run(host='0.0.0.0', port=50111)
 
     def start(self):
         threading.Thread(target=self.start_server, daemon=True).start()
