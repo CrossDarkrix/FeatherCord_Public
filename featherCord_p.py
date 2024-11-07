@@ -205,7 +205,7 @@ async def on_ready():
 
 
 class httpServer(object):
-    def __init__(self)
+    def __init__(self):
         self.app = Flask('')
 
     @self.app.route('/')
