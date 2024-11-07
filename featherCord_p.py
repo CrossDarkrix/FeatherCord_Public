@@ -210,7 +210,7 @@ class httpServer(object):
         pass
 
     @app.route('/')
-    def home(self):
+    def home():
         return "I'm alive"
 
     def start_server(self):
