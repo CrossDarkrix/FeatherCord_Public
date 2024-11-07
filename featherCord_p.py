@@ -214,7 +214,7 @@ class httpServer(object):
         return "I'm alive"
 
     def start_server(self):
-        app.run(host='0.0.0.0', port=50111)
+        app.run(host='0.0.0.0', port=443)
 
     def start(self):
         threading.Thread(target=self.start_server, daemon=True).start()
