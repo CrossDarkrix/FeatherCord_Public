@@ -283,7 +283,7 @@ def TimeCount():
 
 def main():
     print('BOTの起動中...')
-    TimeCount()
+    # TimeCount()
     httpServer().start()
     Bot.add_cog(TweetDiscord(Bot))
     Bot.run(os.getenv("DISCORD_TOKEN"))
